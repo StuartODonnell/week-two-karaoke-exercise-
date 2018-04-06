@@ -1,6 +1,6 @@
 class Room
 
-  attr_reader :room_name, :guests
+  attr_reader :room_name, :guests, :songs
   # attr_writer
   #attr_accessor
 
@@ -8,6 +8,7 @@ class Room
   def initialize(room_name)
     @room_name = room_name
     @guests = []
+    @songs = []
   end
 
   def check_in_guest(guest)
@@ -20,5 +21,9 @@ class Room
 
   def guests_in_room()
     @guests.length
+  end
+
+  def add_songs_to_room(song)
+    @songs.push(song)
   end
 end

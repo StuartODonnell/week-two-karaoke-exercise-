@@ -50,7 +50,8 @@ class TestRoom < MiniTest::Test
     assert_equal(1, @room1.guests_in_room())
   end
 
-
-
+def test_add_songs_to_room
+  assert_equal(1, @room1.add_songs_to_room(@song1).count)
+end
 
   end
