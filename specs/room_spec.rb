@@ -14,6 +14,7 @@ def test_check_room_name()
   assert_equal("The Jockey Wilson Suite", @room.room_name)
 end
 
+end
 
 
 
